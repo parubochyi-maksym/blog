@@ -1,0 +1,97 @@
+.nav {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+  z-index: 100;
+}
+
+.navLeft,
+.navRight {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navCenter {
+  flex: 6;
+}
+
+.navIcon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #444;
+  cursor: pointer;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navListItem {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  list-style: none;
+}
+
+.navImg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navSearchIcon {
+  font-size: 20px;
+  color: grey;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.navUserIcon {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: fit-content;
+  }
+
+  .navLeft {
+    display: none;
+  }
+
+  .navCenter {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .navRight {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .navListItem {
+    list-style: none;
+    text-align: center;
+    margin: 0 10px 0 10px;
+  }
+}

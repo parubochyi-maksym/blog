@@ -1,0 +1,18 @@
+.posts {
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+@media screen and (max-width: 480px) {
+    .posts {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+   .posts {
+    justify-content: center;
+   }
+}

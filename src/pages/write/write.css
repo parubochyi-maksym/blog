@@ -1,0 +1,94 @@
+.write {
+  padding-top: 50px;
+}
+
+.writeImg {
+  margin-left: 150px;
+  width: 70vw;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.writeForm {
+  position: relative;
+}
+
+.writeFormGroup {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+}
+
+.writeIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid;
+  border-radius: 25%;
+  font-size: 20px;
+  color: grey;
+  cursor: pointer;
+}
+
+.writeInput {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+}
+
+.writeInput:focus {
+  outline: none;
+}
+
+.writeText {
+  font-size: 20px;
+  height: 100vh;
+}
+
+.writeSubmit {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  color: white;
+  background-color: cadetblue;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.fileInput {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .write {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .writeImg {
+    margin: 0;
+    width: 100%;
+  }
+
+  .writeForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .writeFormGroup {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .writeText {
+    height: 60vh;
+  }
+}

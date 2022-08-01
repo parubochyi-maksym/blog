@@ -1,0 +1,10 @@
+.single {
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .single {
+    display: flex;
+    flex-direction: column;
+  }
+}
